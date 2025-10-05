@@ -2,8 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-import project1Img from "@/assets/project1.jpg";
-import project2Img from "@/assets/project2.jpg";
+import project1Img from "../../assets/project1.jpg";
+import project2Img from "../../assets/project2.jpg";
+import Image from "next/image";
 
 const ProjectsSection = () => {
   const projects = [
@@ -45,7 +46,7 @@ const ProjectsSection = () => {
               className="card-gradient border-border/50 hover-scale transition-spring group overflow-hidden"
             >
               <div className="relative overflow-hidden">
-                <img 
+                <Image 
                   src={project.image} 
                   alt={project.title}
                   className="w-full h-64 object-cover transition-smooth group-hover:scale-105"

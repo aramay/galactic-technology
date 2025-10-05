@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
-import project1 from "@/assets/project1.jpg";
-import project2 from "@/assets/project2.jpg";
+import project1 from "../../assets/project1.jpg"
+import project2 from "../../assets/project2.jpg";
+import Image from "next/image";
 
 const projects = [
   {
@@ -110,15 +111,17 @@ const EKProjects = () => {
                 </div>
 
                 {/* Project Image */}
+                {/**
                 <div className="md:col-span-4">
                   <div className="aspect-[4/3] overflow-hidden bg-muted/20">
-                    <img 
+                    <Image 
                       src={project.image} 
                       alt={project.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
                 </div>
+                 */}
               </div>
             </a>
           </div>
