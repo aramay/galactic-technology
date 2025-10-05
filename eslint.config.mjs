@@ -25,8 +25,8 @@ const eslintConfig = [
       "out/**",
       "build/**",
       "next-env.d.ts",
-      "src/components/_TBDComponents/**",
-      "src/components/ui/**"
+      "./src/components/_TBDComponents/**",
+      "./src/components/ui/**"
     ],
   },
   
