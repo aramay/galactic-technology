@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
-import { Linkedin, Github } from "lucide-react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const ContactSection = () => {
   const [inView, setInView] = useState(false);
@@ -66,21 +66,23 @@ const ContactSection = () => {
             </div>
             <div className="flex flex-col gap-4">
               <a 
-                href="https://linkedin.com/in/abidramay"
+                href="https://linkedin.com/in/aramay"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group text-lg font-light text-muted-foreground hover:text-foreground transition-all duration-300 w-fit"
+                className="group flex items-center gap-3 text-lg font-light text-muted-foreground hover:text-foreground transition-all duration-300 w-fit"
               >
+                <FaLinkedin size={20} />
                 <span className="border-b border-transparent group-hover:border-current pb-1 transition-all duration-300">
                   LinkedIn
                 </span>
               </a>
               <a 
-                href="https://github.com/abidramay"
+                href="https://github.com/aramay"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group text-lg font-light text-muted-foreground hover:text-foreground transition-all duration-300 w-fit"
+                className="group flex items-center gap-3 text-lg font-light text-muted-foreground hover:text-foreground transition-all duration-300 w-fit"
               >
+                <FaGithub size={20} />
                 <span className="border-b border-transparent group-hover:border-current pb-1 transition-all duration-300">
                   GitHub
                 </span>
@@ -90,11 +92,11 @@ const ContactSection = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-24 pt-12 border-t border-border opacity-20">
-          <div className="flex justify-between items-center text-sm font-light opacity-50">
-            <div>© 2024 Abid Ramay</div>
-            <div>Crafted with precision</div>
-          </div>
+
+        <div className="mt-24 pt-12 border-t border-border opacity-20"></div>
+        <div className="flex justify-between items-center text-sm font-light text-muted-foreground">
+          <div className="">© 2025 Abid Ramay</div>
+          <div>Crafted with precision</div>
         </div>
       </div>
     </section>
