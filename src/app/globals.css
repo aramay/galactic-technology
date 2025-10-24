@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@config "../../tailwind.config.ts";
 
 :root {
   --background: #ffffff;
@@ -23,4 +24,154 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@layer base {
+  :root {
+    --background: 220 27% 8%;
+    --foreground: 220 15% 95%;
+
+    --card: 220 25% 12%;
+    --card-foreground: 220 15% 95%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 220 15% 95%;
+
+    --primary: 195 100% 60%;
+    --primary-foreground: 220 27% 8%;
+
+    --secondary: 220 20% 20%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 280 100% 70%;
+    --accent-foreground: 220 27% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 16%;
+    --ring: 195 100% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom Portfolio Variables */
+    --hero-gradient: linear-gradient(135deg, hsl(195 100% 60% / 0.8), hsl(280 100% 70% / 0.6));
+    --card-gradient: linear-gradient(145deg, hsl(220 25% 12%), hsl(220 20% 18%));
+    --glow-primary: 0 0 40px hsl(195 100% 60% / 0.3);
+    --glow-accent: 0 0 30px hsl(280 100% 70% / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 195 100% 60%;
+    --sidebar-primary-foreground: 220 27% 8%;
+    --sidebar-accent: 220 20% 18%;
+    --sidebar-accent-foreground: 220 15% 85%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 195 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  /* Hero Section Styles */
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+  
+  .card-gradient {
+    background: var(--card-gradient);
+  }
+  
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  
+  .glow-accent {
+    box-shadow: var(--glow-accent);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-spring {
+    transition: var(--transition-spring);
+  }
+  
+  /* Text Effects */
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Hover Effects */
+  .hover-glow:hover {
+    box-shadow: var(--glow-primary);
+    transform: translateY(-2px);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.02) translateY(-2px);
+  }
 }

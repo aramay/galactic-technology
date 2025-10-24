@@ -45,6 +45,13 @@ const ContactSection = () => {
         {/* Contact Info */}
         <div className="space-y-12">
           <div className="space-y-6">
+            
+            <div className="md:text-3xl text-lg font-light text-muted-foreground">
+              San Francisco, CA 🇺🇸
+            </div>
+          </div>
+
+          {/* <div className="space-y-6">
             <a 
               href="mailto:abid.ramay@example.com"
               className="group block text-2xl md:text-3xl font-light text-muted-foreground hover:text-foreground transition-all duration-300"
@@ -57,7 +64,7 @@ const ContactSection = () => {
             <div className="text-lg font-light text-muted-foreground opacity-70">
               San Francisco, CA
             </div>
-          </div>
+          </div> */}
 
           {/* Social Links */}
           <div className="space-y-4 pt-8">

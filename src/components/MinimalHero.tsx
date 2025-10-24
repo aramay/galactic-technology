@@ -41,13 +41,13 @@ const ARHero = () => {
           {/* Name */}
           <div className="overflow-hidden">
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-thin tracking-wider leading-none animate-slide-up">
-              Abid
+              Frontend
             </h1>
           </div>
           
           <div className="overflow-hidden">
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-thin tracking-wider leading-none animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              Ramay
+              Developer
             </h1>
           </div>
 
@@ -55,15 +55,15 @@ const ARHero = () => {
           <div className="space-y-4 mt-16">
             <div className="overflow-hidden">
               <p className="text-xl md:text-2xl text-muted-foreground font-light tracking-wide animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                Frontend Developer
+                Abid Ramay
               </p>
             </div>
             
-            <div className="overflow-hidden">
+            {/* <div className="overflow-hidden">
               <p className="text-lg md:text-xl text-muted-foreground font-light opacity-70 animate-slide-up" style={{ animationDelay: '0.3s' }}>
                 Based in San Francisco
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Status */}

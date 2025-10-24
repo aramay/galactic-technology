@@ -1,5 +1,7 @@
-@tailwind base;
-@tailwind components;
+/* @tailwind base; */
+/* @tailwind components; */
+
+@import "tailwindcss/preflight"
 @tailwind utilities;
 
 /* Developer Portfolio Design System - Dark Modern Theme */
