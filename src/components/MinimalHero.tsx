@@ -80,7 +80,7 @@ const ARHero = () => {
       <div className="absolute bottom-8 left-8 md:left-16">
         <div className="flex items-center gap-2 text-xs font-light tracking-wider uppercase opacity-50 animate-float">
           <div className="w-px h-12 bg-muted-foreground opacity-30"></div>
-          <span className="writing-mode-vertical-rl rotate-180">Scroll</span>
+          <span className="writing-mode-vertical-rl">Scroll</span>
         </div>
       </div>
     </section>
